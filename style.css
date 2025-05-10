@@ -1,0 +1,235 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* Logo and Image */
+.logo{
+    margin: 8px 6px;
+}
+.logo img{
+    filter: invert(50);
+    margin: 5px 5px;
+    height: 80px;
+    
+}
+
+
+/* List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: "Libre Baskerville", serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 252px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/bg.png.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: "Tajawal", sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Tajawal", sans-serif;
+}
+/* Services Section */
+#services{
+    margin: 20px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 10px 4px;
+    border-radius: 20px;
+    background-color: rgb(245, 235, 235);
+
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+
+/* Clients Section */
+#client-section{
+    position: relative;
+     height: 343px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg2.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 78%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 28px;
+}
+
+#clients img{
+    height: 80px;
+}
+ /* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.6;
+     background: url('../img/contact.jpg') no-repeat center center/cover;
+}
+ 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 88%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;   
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+      font-size: 2.8rem;
+      padding: 7px;
+      font-family: "M PLUS Rounded 1c", sans-serif;    }
+
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 8px;
+    font-family: "M PLUS Rounded 1c", sans-serif;}
+.btn{
+    padding: 6px 23px;
+    margin: 15px;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
